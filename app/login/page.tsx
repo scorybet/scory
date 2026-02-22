@@ -18,7 +18,7 @@ export default function LoginPage() {
     const { error } = await supabase.auth.signInWithOtp({
       email,
       options: {
-        emailRedirectTo: "https://scory.vercel.app/auth/callback",
+        emailRedirectTo: "https://scory-three.vercel.app/auth/callback",
       },
     });
 
