@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { supabase } from "@/lib/supabase/client";
+import { supabase } from "../../lib/supabase/client";
 
 type League = { id: string; name: string; join_code: string };
 type Episode = { id: string; number: number; air_date: string | null; lock_at: string | null };
