@@ -6,7 +6,6 @@ import { supabase } from "@/lib/supabase/client";
 export default function AuthCallbackPage() {
   useEffect(() => {
     const run = async () => {
-      // Supabase récupère la session depuis l’URL (#access_token=...)
       const { data, error } = await supabase.auth.getSession();
 
       if (error || !data.session) {
